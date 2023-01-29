@@ -22,6 +22,7 @@
 Проверить, чтобы все работало без ошибок в консоли */
 
 'use strict';
+/*
 
 const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
@@ -46,3 +47,22 @@ const personalMovieDB = {
 console.log(numberOfFilms);
 
 console.log(personalMovieDB);
+
+*/
+
+let result = '';
+
+const lengthz = 10;
+
+first: for (let i = 1; i < lengthz; i++) {
+    console.log(`First level: ${i}`);
+
+    for (let j = 0; j < i; j++) {
+        console.log(`Second level: ${j}`);
+
+        for (let k = 0; k < 5; k++) {
+            if (k === 2) break first;
+            console.log(`Third level: ${k}`);
+        }
+    }
+}
